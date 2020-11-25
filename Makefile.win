@@ -1,0 +1,52 @@
+# Project: Project_othello
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canflip.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canplace.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/check_result.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/flip.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/init_othello.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/isGameEnd.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/main.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/printf_othello.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/winner.o
+LINKOBJ  = ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canflip.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canplace.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/check_result.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/flip.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/init_othello.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/isGameEnd.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/main.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/printf_othello.o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/winner.o
+LIBS     = -L"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/lib" -L"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/include" -I"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/include" -I"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/Heejin/Desktop/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Project_othello.exe
+CXXFLAGS = $(CXXINCS) -std=c99
+CFLAGS   = $(INCS) -std=c99
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canflip.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canflip.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canflip.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canflip.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canplace.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canplace.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canplace.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/canplace.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/check_result.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/check_result.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/check_result.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/check_result.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/flip.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/flip.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/flip.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/flip.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/init_othello.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/init_othello.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/init_othello.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/init_othello.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/isGameEnd.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/isGameEnd.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/isGameEnd.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/isGameEnd.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/main.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/main.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/main.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/main.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/printf_othello.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/printf_othello.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/printf_othello.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/printf_othello.o $(CFLAGS)
+
+../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/winner.o: ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/winner.c
+	$(CC) -c ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/winner.c -o ../ø¿µ®∑Œ∞‘¿”/ø¿µ®∑Œ∞‘¿”/winner.o $(CFLAGS)
