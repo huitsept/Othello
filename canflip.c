@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "gameboard.h"
+//뒤집을 수 있는 상황인지  방향별로 판 
 
 int i, j, cw, ce, cn, cs, cnw, cne, csw, cse;
 int west, east, north, south, northwest, southwest, northeast, southeast;
