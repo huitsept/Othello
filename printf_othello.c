@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "gameboard.h"
-
+//gameboard format 
 void printf_othello()
 {
 	int i, j;
