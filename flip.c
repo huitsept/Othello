@@ -4,8 +4,9 @@
 void flip(char gameboard[N][N], int x, int y, int turn)
 {
 	int i, j;
-	extern int cw, ce, cn, cs, cnw, cne, csw, cse;
-
+	extern int cw, ce, cn, cs, cnw, cne, csw, cse; //check ¹æÇâ
+	
+	//player 1 
 	if (turn % 2 == 0) {
 		if (cn > 0) {
 			for (i = x, j = y; i > (x - cn); i--) {
@@ -48,6 +49,8 @@ void flip(char gameboard[N][N], int x, int y, int turn)
 			}
 		}
 	}
+	
+	//player2
 	else if (turn % 2 == 1) {
 		if (cn > 0) {
 			for (i = x, j = y; i > (x - cn); i--) {
