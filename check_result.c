@@ -3,7 +3,7 @@
 
 void check_result()
 {
-    int wc = 0,  wb = 0;
+    int wc = 0,  wb = 0; //wc = 흰돌 수, wb=검은돌  
 
 	for (int i = 0; i < 6; i++) {
 		for (int j = 0; j < 6; j++) {
